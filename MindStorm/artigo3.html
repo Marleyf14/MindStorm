@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey of the Solar Particle</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.home{
+    text-align: center;
+   
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.image-caption {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.story-box {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 70%;
+    position: relative;
+}
+
+.story-title {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.story-box p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.next-page {
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="reference">.</div>
+       
+    </header>
+    <div class="home">
+        <ul>
+            <div class="home">
+                <a href="#" style="color: black; text-decoration: none;">Home</a>
+                <a href="#" style="padding-left: 2%; color: black; text-decoration: none;">Add</a>
+                <a href="#" style="padding-left: 2%; color: black; text-decoration: none;">More</a>
+            </div>
+         
+        </ul>
+    </div>
+    <main>
+        <section class="content">
+            <h1>Journey of the Solar Particle</h1>
+            <img src="MindStorm/src/style/img/terra.gif" alt="Solar Particle Hitting Earth" class="main-image" id="mainImage">
+            <p class="image-caption">Illustration of sun rays hitting Earth's atmosphere. Source: NASA, giphy.com.</p>
+
+            <div class="story-box" id="storyBox">
+                <p class="story-title" id="storyTitle">The Journey of the Solar Particle</p>
+                <p id="storyText">
+                    A simple particle, yes, that is me. My journey began in a solar storm. A 
+                    <span class="highlight">coronal mass ejection</span> propelled me into space at an astonishing speed. 
+                    I was created inside the Sun, among billions of other particles, but now, I am being thrown out into the void.
+                </p>
+                <p id="storyText2">
+                    The Sun is over 150 million kilometers from Earth, and for an object moving thousands of kilometers away...
+                </p>
+                <span class="next-page" onclick="nextStory()">&#10230;</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&#169; All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Define os conteúdos das histórias
+        const stories = [
+            {
+                title: "The Journey of the Solar Particle",
+                text1: "A simple particle, yes, that is me. My journey began in a solar storm. A coronal mass ejection propelled me into space at an astonishing speed. I was created inside the Sun, among billions of other particles, but now, I am being thrown out into the void.",
+                text2: "The Sun is over 150 million kilometers from Earth, and for an object moving thousands of kilometers away..."
+            },
+            {
+                title: "",
+                text1: "...from Earth, and to an object moving at thousands of kilometers per second, space seems vast and silent. My initial acceleration was extreme, but I soon realized that, despite being free of any resistance, there was a force that I would begin to feel. The Sun's gravity weakened as I moved away, but my movement was fast enough to traverse interplanetary space without slowing down.",
+                text2: "As I traveled, there was little I could do other than keep moving in a straight line. Space was..."
+            },
+            {
+                title: "",
+                text1: "...devoid of any significant structure except for scattered fragments of matter and distant stars. The journey seemed endless, but soon I began to notice that the Earth's magnetic field was getting closer.",
+                text2: "As I got closer to the planet, the Earth's magnetic field began to affect me. It was formed by invisible lines of force that permeated space, and it was in their interaction that my movement began to be deflected. The Earth's magnetic field is..."
+            },
+            {
+                title: "",
+                text1: "...it's vast, but I was heading toward the region where solar particles are trapped. This area is known as the Van Allen radiation belts, a zone where charged particles like me accumulate and follow circular paths around the planet.",
+                text2: "However, my trajectory didn't lead me to get trapped there. The Earth's magnetic field began to direct me toward the poles. As part of the natural process of interaction between the solar wind and..."                
+            },
+            {
+                title: "",
+                text1: "...and the Earth's magnetic field, I was guided toward the polar regions.",
+                text2: "As I got closer to Earth, the interaction between my magnetic field and the Earth's magnetic field caused me to collide with molecules in the upper atmosphere. These encounters excited oxygen and nitrogen atoms, resulting in a phenomenon known as..."
+            },
+            {
+                title: "",
+                text1: "...the aurora borealis in the northern hemisphere, and the aurora australis in the southern hemisphere. This glow was not caused by something like a chemical reaction, but by the energy that I, and other particles like me, transferred to the molecules of the Earth's atmosphere.",
+                text2: "The aurora is not a conscious event, but a physical consequence of my interaction with the Earth. I and other solar particles that followed the same path contributed to this manifestation..."
+            },
+            {
+                title: "",
+                text1: "...of light, generated by our energy. What was once a charged particle with rectilinear motion now dispersed in the atmosphere, converting part of its energy into visible light.",
+                text2: "Thus, my journey came to an end. I no longer had enough movement to continue my trajectory through space. My energy was absorbed by the Earth's atmosphere, and I was dissipated in the process."
+            },
+        ];
+
+        let currentStory = 0; // Controle da história atual
+
+        function nextStory() {
+            currentStory++;
+            if (currentStory >= stories.length) {
+                currentStory = 0; // Volta para a primeira história quando chega ao final
+            }
+            // Atualiza os textos e o título da história com os novos dados
+            document.getElementById("storyTitle").innerText = stories[currentStory].title;
+            document.getElementById("storyText").innerText = stories[currentStory].text1;
+            document.getElementById("storyText2").innerText = stories[currentStory].text2;
+        }
+    </script>
+</body>
+</html>
